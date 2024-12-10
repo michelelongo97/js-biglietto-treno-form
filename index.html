@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts: https://fonts.google.com/ -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- /Google Fonts -->
     <title>Acquista il tuo biglietto</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <section class="container">
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <section class="calcticket">
+    <form>
+      <div class="container">
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
         <div class="row">
-            <button> Genera</button>
-            <button> Annulla</button>
+            <div class="col">
+                <label for="name">Nome Cognome</label>
+                <input type="text" placeholder="Inserisci il tuo nome">
+            </div>
+            <div class="col">
+                <label for="name">Km da percorrere</label>
+                <input type="text" placeholder="Inserisci i km da percorrere">
+            </div>
+            <div class="col">
+                <label for="name">Fascia d'età</label>
+                <input type="text" placeholder="Inserisci fascia d'età">
+            </div>
         </div>
+        <div class="row">
+          <button class="btn">Genera</button>
+          <button class="btn">Annulla</button>
+        </div>
+      </div>
+    </form>
     </section>
 
-    <section class="container">
+    <section class="viewticket">
+      <div class="container">
         <h1>IL TUO BIGLIETTO</h1>
-        <div class="row">
-            
+        <div>
+          <h3>DETTAGLIO PASSEGGERI</h3>
+          <hr>
+          <div class="row">
+            <div class="first-col">
+              <h4>NOME PASSEGGERO</h4>
+              <p>John Snow</p>
+            </div>
+            <div>
+              <h4>Offerta</h4>
+              <p>Biglietto Standard</p>
+            </div>
+            <div>
+              <h4>Carrozza</h4>
+              <p>5</p>
+            </div>
+            <div>
+              <h4>Codice CP</h4>
+              <p>92911</p>
+            </div>
+            <div>
+              <h4>Costo Biglietto</h4>
+              <p>€2.10</p>
+            </div>
+          </div>
+          <hr>
         </div>
+      </div>
     </section>
     <script src="/script/script.js"></script>
-</body>
+  </body>
 </html>
