@@ -22,11 +22,11 @@
         <div class="row">
             <div class="col">
                 <label for="fullname">Nome Cognome</label>
-                <input type="text" placeholder="Inserisci il tuo nome" id="fullname-field">
+                <input type="text" placeholder="Inserisci il tuo nome" id="fullname-field" required>
             </div>
             <div class="col">
                 <label for="km-field">Km da percorrere</label>
-                <input type="number" placeholder="Inserisci i km da percorrere" id="km-field">
+                <input type="number" placeholder="Inserisci i km da percorrere" id="km-field" required>
             </div>
             <div class="col">
                 <label for="age-field">Fascia d'età</label>
@@ -38,14 +38,14 @@
             </div>
         </div>
         <div class="row">
-          <button class="btn">Genera</button>
-          <button class="btn">Annulla</button>
+          <button type="submit" id="btn-create" class="btn">Genera</button>
+          <button type="reset" id="btn-reset" class="btn">Annulla</button>
         </div>
       </div>
     </form>
     </section>
 
-    <section class="viewticket">
+    <section class="viewticket ticket" >
       <div class="container">
         <h1>IL TUO BIGLIETTO</h1>
         <div>
@@ -62,15 +62,15 @@
             </div>
             <div>
               <h4>Carrozza</h4>
-              <p>5</p>
+              <p id="wagon">5</p>
             </div>
             <div>
               <h4>Codice CP</h4>
-              <p>92911</p>
+              <p id="cp">92911</p>
             </div>
             <div>
               <h4>Costo Biglietto</h4>
-              <p>€2.10</p>
+              <p id="ticketprice">€2.10</p>
             </div>
           </div>
           <hr>

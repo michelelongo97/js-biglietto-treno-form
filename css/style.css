@@ -139,6 +139,15 @@ input, select{
     padding: 10px;
 }
 
+#age-field{
+    width: 180px;
+    height: 34px;
+}
+
+.ticket{
+    display: none;
+}
+
 .viewticket .container div{
     background-color: #fff;
 }
